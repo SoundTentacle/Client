@@ -1,9 +1,4 @@
-var www_root = "file:///android_asset/www/";
 var host = "http://192.168.10.69:1337";
-
-function onLoad () {
-	document.addEventListener("deviceready", onDeviceReady, true);
-}
 
 function getData (path, data, method) {
 	$.support.cors = true;
@@ -76,11 +71,11 @@ function fillPlayerDevices (devices) {
 
 function getLibrary () {
 	getData ('/lib', '{"cmd" : "get_all"}', fillLibrary);
-	window.location = www_root + "_library/lib.html";
 }
 
+
 function getTest () {
-	window.location = www_root + "test.html";
+	window.location.href = "test.html";
 }
 
 function getPlayer () {
