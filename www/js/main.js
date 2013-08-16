@@ -1,3 +1,4 @@
+var www_root = "file:///android_asset/www/";
 var host = "http://192.168.10.69:1337";
 
 function getData (path, data, method) {
@@ -71,6 +72,7 @@ function fillPlayerDevices (devices) {
 
 function getLibrary () {
 	getData ('/lib', '{"cmd" : "get_all"}', fillLibrary);
+	window.location = www_root + "_library/lib.html";
 }
 
 function getPlayer () {
