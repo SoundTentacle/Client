@@ -78,7 +78,8 @@ function getPlayer () {
 }
 
 function getTest () {
-	$.mobile.loadPage( "test.html" , true );
+	//$.mobile.loadPage( "test.html" , true );
+	window.location="test.html";
 }
 
 function getDevices () {
