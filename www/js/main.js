@@ -1,6 +1,10 @@
 var www_root = "file:///android_asset/www/";
 var host = "http://192.168.10.69:1337";
 
+function onLoad () {
+	document.addEventListener("deviceready", onDeviceReady, true);
+}
+
 function getData (path, data, method) {
 	$.support.cors = true;
 
