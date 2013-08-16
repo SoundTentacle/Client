@@ -13,7 +13,7 @@
     <script type='text/javascript' src='js/SimpleSplitView.js'></script>
 -->
 </head>
-<body onload="onLoad ()">
+<body>
 	<a href="_player/player.html" rel="external" data-role="button" data-transition="slide">
 		Player
 	</a>
@@ -33,7 +33,7 @@
 	<a href="test.html" data-role="button" rel="external" data-ajax="false" data-transition="slide">
 		Blank
 	</a>
-	<a href="test.html" data-role="button" data-ajax="false" data-transition="slide">
+	<a data-role="button" data-ajax="false" data-transition="slide" onclick="getTest ()" id="testLink">
 		Blank ohne external
 	</a>
 </body>

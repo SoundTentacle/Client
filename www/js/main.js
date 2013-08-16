@@ -1,11 +1,9 @@
 var host = "http://192.168.10.69:1337";
 
-function onLoad () {
-	$( document ).bind( "mobileinit", function() {
-		$.mobile.allowCrossDomainPages = true;
-		$.support.cors = true;
-	});
-}
+$( "#testLink" ).on( "click", function() {
+	alert ("testClicket")
+	$.mobile.loadPage( "test.html" , true );
+});
 
 function getData (path, data, method) {
 	$.support.cors = true;
@@ -85,7 +83,10 @@ function getPlayer () {
 }
 
 function getTest () {
-	$.mobile.changePage( "test.html", { transition: "slideup", changeHash: false });
+	alert ("testClicketThrougFunction")
+	$( "#testLink" ).on( "click", function() {
+    	$.mobile.loadPage( "test.html" , true );
+  	});
 }
 
 function getDevices () {
