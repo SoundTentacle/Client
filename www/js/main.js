@@ -73,11 +73,6 @@ function getLibrary () {
 	getData ('/lib', '{"cmd" : "get_all"}', fillLibrary);
 }
 
-
-function getTest () {
-	window.location.href = "test.html";
-}
-
 function getPlayer () {
 	getData ('/instance', '{"cmd" : "get_all"}', fillPlayer);
 }
