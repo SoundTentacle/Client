@@ -1,10 +1,5 @@
 var host = "http://192.168.10.69:1337";
 
-$( "#testLink" ).on( "click", function() {
-	alert ("testClicket")
-	$.mobile.loadPage( "test.html" , true );
-});
-
 function getData (path, data, method) {
 	$.support.cors = true;
 
@@ -83,10 +78,7 @@ function getPlayer () {
 }
 
 function getTest () {
-	alert ("testClicketThrougFunction")
-	$( "#testLink" ).on( "click", function() {
-    	$.mobile.loadPage( "test.html" , true );
-  	});
+	$.mobile.loadPage( "test.html" , true );
 }
 
 function getDevices () {
