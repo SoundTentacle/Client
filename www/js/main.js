@@ -1,7 +1,8 @@
-var host = "http://localhost:1337";
-$.support.cors = true;
+var host = "http://192.168.10.69:1337";
 
 function getData (path, data, method) {
+	$.support.cors = true;
+
 	$.ajax({
 		url: host+path,
 		type: "POST",
