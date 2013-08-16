@@ -75,6 +75,10 @@ function getLibrary () {
 	window.location = www_root + "_library/lib.html";
 }
 
+function getTest () {
+	window.location = www_root + "test.html";
+}
+
 function getPlayer () {
 	getData ('/instance', '{"cmd" : "get_all"}', fillPlayer);
 }
