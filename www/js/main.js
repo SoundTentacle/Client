@@ -1,5 +1,12 @@
 var host = "http://192.168.10.69:1337";
 
+function onLoad () {
+	$( document ).bind( "mobileinit", function() {
+		$.mobile.allowCrossDomainPages = true;
+		$.support.cors = true;
+	});
+}
+
 function getData (path, data, method) {
 	$.support.cors = true;
 
@@ -75,6 +82,10 @@ function getLibrary () {
 
 function getPlayer () {
 	getData ('/instance', '{"cmd" : "get_all"}', fillPlayer);
+}
+
+function getTest () {
+	$.mobile.changePage( "test.html", { transition: "slideup", changeHash: false });
 }
 
 function getDevices () {
