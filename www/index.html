@@ -2,10 +2,18 @@
 <html>
 <head>
     <title>SoundTentacle Client</title>
+    <script type="text/javascript">
+    	function testLink () {
+    		window.open('test.html', '_blank', 'location=yes');
+    	}
+    	function testGoogle () {
+    		window.open('http://google.de', '_blank', 'location=yes');
+    	}
+    </script>
 </head>
 <body>
-	<a href="test.html">Test</a>
+	<a href="" onclick="testLink ()">Test Local</a>
 	<br/>
-	<a href="file://android_asset/www/test.html">Test</a>
+	<a href="" onclick="testGoogle ()">Test Google</a>
 </body>
 </html>
